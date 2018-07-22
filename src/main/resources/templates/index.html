@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Home Page!</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <h1>Library project</h1>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#" th:href="@{'/index'}">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"
+                        style="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="#" th:href="@{'/authors/home'}">Authors</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"
+                        style="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="#" th:href="@{'/books/home'}">Books</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"
+                        style="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="#" th:href="@{'/librarians/home'}">Librarians</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"
+                        style="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="bs-docs-section">
+        <div class="row" style="margin-top: 10rem;">
+            <div class="col-lg-8">
+                <h2 id="nav-tabs">About project</h2>
+                <div class="bs-component">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-toggle="tab" href="#info">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#description">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#author">About author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#sources">Sources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tech">Technologies</a>
+                        </li>
+
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active show" id="info"
+                             style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                            <h4>Simple project of library in spring.</h4>
+                            <h4>Status: Currenty in test</h4>
+                            <h4>Author: Daniel Załęski</h4>
+                        </div>
+                        <div class="tab-pane fade" id="description"
+                             style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                            <h4>It's my first project in webdev so it's not perfect. I supose that will be better day by
+                                day :)</h4>
+                            <h4> I choose library as a project subject becouse it give me all I need on start with
+                                webdev eg. database, crud or jpa.
+                                I hope that I will learn as much its possible and in future I will can create more
+                                complicated systems. </h4>
+                        </div>
+                        <div class="tab-pane fade" id="author"
+                             style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                            <h4>My name is Daniel Załęski. I live in Olsztyn and study economy and IT at University of
+                                Warmia and Mazuy. In my free time I learn about java in all ways. </h4>
+                            <h4>Now I interest about Spring framework. The reason it's simple - I want to learn new
+                                technologies and constantly develop my skills. On my IT studies classes about
+                                object-oriented programming are run in C# technology but Java is my favourite for a long
+                                time. </ H4>
+                            <h4> Classes about object-oriented programming though they was in C # I learned much about
+                                object-oriented design and good behavior in softwares developing eg. SOLID principles or
+                                some design patterns.</h4>
+                            <h4>When I don't learn Java i play computer games. I like all type of strategy games,
+                                sometimes I watching NBA matches. I dont have to much time on this but its my favourite
+                                thing for unstress.</h4>
+                        </div>
+                        <div class="tab-pane fade" id="sources"
+                             style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                            <h4>Theme : https://bootswatch.com/</h4>
+                        </div>
+                        <div class="tab-pane fade" id="tech"
+                             style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+                            <h3>Spring Boot</h3>
+                            <h3>Thymeleaf</h3>
+                            <h3>h2 database</h3>
+                            <h3>Project lombok</h3>
+                            <h3>Hibernate</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
